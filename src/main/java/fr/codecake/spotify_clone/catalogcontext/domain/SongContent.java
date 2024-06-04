@@ -25,7 +25,7 @@ public class SongContent implements Serializable {
     private Song song;
 
     @Lob
-    @Column(name = "file", nullable = false)
+    @Column(name = "file", nullable = false, columnDefinition = "LONGBLOB")
     private byte[] file;
 
     @Column(name = "file_content_type")

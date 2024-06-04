@@ -35,7 +35,7 @@ public class Song implements Serializable {
     private String author;
 
     @Lob
-    @Column(name = "cover", nullable = false)
+    @Column(name = "cover", nullable = false, columnDefinition = "LONGBLOB")
     private byte[] cover;
 
     @Column(name = "cover_content_type", nullable = false)
